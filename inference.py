@@ -135,10 +135,11 @@ if __name__ == "__main__":
     mixed_precision = "fp16"
     stage = 'auto-regressive' # ["multi-image-condition", "auto-regressive", "no"]
     
-    prompt = "The white cat is running after the black-haired man."
-    prev_p = ["The black-haired man", "The white cat."]
-    ref_image = ["./data/boy.png", 
-                 "./data/cat.png"]
+   
+    prompt = "bunny hops through the meadow"
+    prev_p = ["cartoon drawing of a white bunny in a tranquil meadow with grass and flowers"]
+    ref_image = ["./data/bunny.png"]
+
 
     test(pretrained_model_path, 
          logdir, 
