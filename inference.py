@@ -121,7 +121,11 @@ def test(
 
 
 if __name__ == "__main__":
+    """
+    Stable diffusion prompt (16:9 - aspect ratio)  #1 -Cartoon drawing of a white bunny in a tranquil meadow with grass and flowers
 
+    
+    """
     pretrained_model_path = '/home/user/StoryGen/StoryGen/checkpoint_StorySalon/'
     logdir = "./inference_StorySalon/"
     num_inference_steps = 40
