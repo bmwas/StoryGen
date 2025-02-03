@@ -122,7 +122,7 @@ def test(
 
 if __name__ == "__main__":
 
-    pretrained_model_path = '/checkpoint_StorySalon/'
+    pretrained_model_path = '/home/user/StoryGen/StoryGen/checkpoint_StorySalon/'
     logdir = "./inference_StorySalon/"
     num_inference_steps = 40
     guidance_scale = 7
@@ -131,10 +131,10 @@ if __name__ == "__main__":
     mixed_precision = "fp16"
     stage = 'auto-regressive' # ["multi-image-condition", "auto-regressive", "no"]
     
-    prompt = "The white cat is running after the black-haired man."
-    prev_p = ["The black-haired man", "The white cat."]
-    ref_image = ["./data/boy.jpg", 
-                 ".data/whitecat1.jpg"]
+    prompt = "The red dragon is flying above the white dog."
+    prev_p = ["The white dog", "flying dragon."]
+    ref_image = ["./data/image/00001.png", 
+                 "./data/image/00002.png"]
 
     test(pretrained_model_path, 
          logdir, 
